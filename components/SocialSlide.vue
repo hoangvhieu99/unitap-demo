@@ -10,7 +10,108 @@
       <h2 class="mt-px mb-16">“Chúng tôi quan tâm đến khách hàng từ những điều nhỏ nhất” - Unitap.</h2>
     </div>
 
-    <div class="grid grid-cols-3 gap-x-6 justify-items-center">
+    <VueSlickCarousel v-bind="settings" class="carousel">
+      <div class="bg-white-1 border rounded-3xl flex flex-col justify-center">
+        <div class="mx-14">
+          <div class="text-black-1 text-icon font-medium mt-14 mb-10">''</div>
+            <div class="mb-14 text-soci font-medium text-black-3 mt-0.5">
+              Dùng thẻ Unitap rất an toàn,<br/> 
+              nhanh chóng tiện lợi, nên<br/>
+              xài thử.
+            </div>
+          <div class="mt-1 inline-flex gap-x-32 mb-14 ">
+              <div>
+                  <div class="flex">
+                    <div class="text-blue-2 mr-2">@</div>
+                    <div class="font-medium text-dm text-black-3">Ly Lê</div>
+                  </div>
+                <div class="text-mn text-vnd font-medium">
+                    Verified artist
+                </div>
+              </div>
+              <div>
+                  <img src="../images/icons/user.svg" alt="">
+              </div>
+          </div>      
+        </div>
+      </div>
+
+      <div class="bg-white-1 border rounded-3xl flex flex-col justify-center">
+        <div class="mx-14">
+          <div class="text-black-1 text-icon font-medium mt-14 mb-10">''</div>
+            <div class="mb-14 text-soci font-medium text-black-3 mt-0.5">
+              Dùng thẻ Unitap rất an toàn,<br/> 
+              nhanh chóng tiện lợi, nên<br/>
+              xài thử.
+            </div>
+          <div class="mt-1 inline-flex gap-x-32 mb-14 ">
+              <div>
+                  <div class="flex">
+                    <div class="text-blue-2 mr-2">@</div>
+                    <div class="font-medium text-dm text-black-3">Ly Lê</div>
+                  </div>
+                <div class="text-mn text-vnd font-medium">
+                    Verified artist
+                </div>
+              </div>
+              <div>
+                  <img src="../images/icons/user.svg" alt="">
+              </div>
+          </div>      
+        </div>
+      </div>
+
+      <div class="bg-white-1 border rounded-3xl flex flex-col justify-center">
+        <div class="mx-14">
+          <div class="text-black-1 text-icon font-medium mt-14 mb-10">''</div>
+            <div class="mb-14 text-soci font-medium text-black-3 mt-0.5">
+              Dùng thẻ Unitap rất an toàn,<br/> 
+              nhanh chóng tiện lợi, nên<br/>
+              xài thử.
+            </div>
+          <div class="mt-1 inline-flex gap-x-32 mb-14 ">
+              <div>
+                  <div class="flex">
+                    <div class="text-blue-2 mr-2">@</div>
+                    <div class="font-medium text-dm text-black-3">Ly Lê</div>
+                  </div>
+                <div class="text-mn text-vnd font-medium">
+                    Verified artist
+                </div>
+              </div>
+              <div>
+                  <img src="../images/icons/user.svg" alt="">
+              </div>
+          </div>      
+        </div>
+      </div>
+
+      <div class="bg-white-1 border rounded-3xl flex flex-col justify-center">
+        <div class="mx-14">
+          <div class="text-black-1 text-icon font-medium mt-14 mb-10">''</div>
+            <div class="mb-14 text-soci font-medium text-black-3 mt-0.5">
+              Dùng thẻ Unitap rất an toàn,<br/> 
+              nhanh chóng tiện lợi, nên<br/>
+              xài thử.
+            </div>
+          <div class="mt-1 inline-flex gap-x-32 mb-14 ">
+              <div>
+                  <div class="flex">
+                    <div class="text-blue-2 mr-2">@</div>
+                    <div class="font-medium text-dm text-black-3">Ly Lê</div>
+                  </div>
+                <div class="text-mn text-vnd font-medium">
+                    Verified artist
+                </div>
+              </div>
+              <div>
+                  <img src="../images/icons/user.svg" alt="">
+              </div>
+          </div>      
+        </div>
+      </div>
+    </VueSlickCarousel>
+    <!-- <div class="grid grid-cols-3 gap-x-6 justify-items-center">
       <div class="bg-white border rounded-3xl flex flex-col justify-center">
         <div class="mx-14">
           <div class="text-black-1 text-icon font-medium mt-14 mb-10">''</div>
@@ -85,16 +186,27 @@
           </div>      
         </div>
       </div>
-    </div>
-
-    <div class="border mt-14 mb-16 border-gray-100"></div>
+    </div> -->
   </div>
 </div>
 </template>
 
 <script>
-export default {
-  name: 'SocialSlide',
+ export default {
+  data() {
+    return {
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+        slidesToScroll: 3,
+        dots: true,
+        // mất 2 nút pre next
+        arrows: false,
+      }
+    }
+  }
 }
 </script>
+
+
 
