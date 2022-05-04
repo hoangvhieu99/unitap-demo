@@ -2,59 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-radio-btn {
-    --size: 21px;
-    min-width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    padding-left: var(--size);
-  }
-  .custom-radio-btn input {
-    display: none;
-  }
-  
-  /* checkmark */
-  
-  .custom-radio-btn .checkmark {
-    --gap: 3px;
-    --border: 2px;
-    --check-color: #FFA654;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    display: inline-block;
-    transition: opacity 0.3s ease; 
-    border: var(--border) solid #CCCCCC; 
-    padding: var(--gap);
-    position: absolute;
-    top: 0;
-    left: 0; 
-  }
-  
-  /* .custom-radio-btn.left .checkmark {
-    left: auto;
-    right: 0;
-  } */
 
-  .custom-radio-btn input:checked ~ .checkmark {
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    background-image: radial-gradient(
-      circle at center, 
-      var(--check-color) 
-         calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), 
-      rgba(255, 255, 255, 0) 0);
-    border-color: #FFA654;
-  }
+.item::before{
+  content: "";
+  border: 2px solid #AAA;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin: -8px -2px;
+  margin-left: 0;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+.item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: rgba(34, 34, 34, 0);
+  left: 6px;
+  top: 16px;
+  margin: -8px 20px;
+  margin-left: 0;
+  border-radius: 50%;
+}
+input[type="radio"]:checked~div.content label::before {
+  border: 2px solid #FFA654;
+}
+input[type="radio"]:checked~div.content label::after{
+  background:#FFA654;
+}
+
+.group:hover label::before {
+  border: 2px solid #FFA654;;
+}
+
+input[type=radio]:checked~div.content label .title{
+ color: #1E2A39;
+}
+input[type=radio]:checked~div.content label .discount{
+ color: #fff;
+ background-color: #D00000;
+}
+input[type=radio]:checked~div.content .price{
+ color: #1E2A39;
+}
+input[type=radio]:checked~div.content .line-through{
+  color: #828282;
+ }
+input[type=radio]:checked~div.content .dot{
+  background-color: #1E2A39;
+ }
+input[type=radio]:checked~div.content .text-ordct{
+ color: #1E2A39;
+}
+label {
+  position: relative;
+}
+
+input[type=radio]{
+ display: none;
+}
+
 /* dấu chấm ở order slide */
   .dot{
     width: 6px;
     height: 6px;
-    /* background-color: #1E2A39; */
     border-radius: 50%;
   }
   .order__colors{
@@ -63,61 +78,6 @@
     -webkit-text-fill-color: transparent;
   }
 
-  /* .hexagon{
-    height: 2.1875rem;
-    width: 2.375rem;
-    clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
-  } */
-
-  .hexagon,
-  .hexagon::after,
-  .hexagon::before{
-    border-right:1px solid #000;
-    border-left:1px solid #000;
-  }
-
-  .hexagon,
-  .hexagon-es {
-    width: 34px;
-    height: 19px;
-    position: relative;
-    border-radius: 3px;
-
-  }
-
-  .hexagon:hover,
-  .hexagon-es:hover{
-    transform: rotate(-110deg);
-  }
-
-  .hexagon-es,
-  .hexagon-es::after,
-  .hexagon-es::before{
-    border-right:1px solid #000;
-    border-left:1px solid #000;
-    background: conic-gradient(from 180deg at 52.49% 50%, #FF5B28 -13.07deg, rgba(89, 95, 221, 0.77) 70.77deg, rgba(255, 88, 158, 0.77) 135deg, #FFB865 273.34deg, #FF5B28 346.93deg, rgba(89, 95, 221, 0.77) 430.77deg);
-  }
-  .hexagon::after,
-  .hexagon::before,
-  .hexagon-es::after,
-  .hexagon-es::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 19px;
-    border-radius: 2px;
-    background: inherit;
-  }
-  .hexagon:before,
-  .hexagon-es::before{
-    transform: rotate(60deg);
-  }
-  .hexagon:after,
-  .hexagon-es::after {   
-    transform: rotate(-60deg);
-  }
 
   .slick-list {
     margin-left: -1rem;
@@ -125,13 +85,12 @@
   }
   
   .slick-dots {
-    margin-top: 3.5rem;
-    /* margin-bottom: 4.1875rem; */
+    /* margin-top: 0.5rem; */
     display: flex !important;
     justify-content: center;
     align-items: center;
     -moz-column-gap: 0.875rem;
-         column-gap: 0.875rem;
+    column-gap: 0.875rem;
   }
   
   .slick-dots li{

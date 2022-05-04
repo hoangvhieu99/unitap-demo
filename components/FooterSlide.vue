@@ -27,51 +27,53 @@
                 <ul class="flex flex-col gap-y-3 text-white-3 text-futer">
                     <li><a href="#" class="underline decoration-white-3">Về chúng tôi</a></li>
                     <li><a href="#">info@thethongminhunitap.com</a></li>
-                    <li><a href="#">123 Đường Võ thị Sáu, Quận 3, TP.Hồ Chí Minh</a></li>
+                    <li><a href="#">123 Đường Võ thị Sáu, Quận 3,<br/> TP.Hồ Chí Minh</a></li>
                 </ul>
             </div>
             <div class="mt-20">
-                <div class="bg-white border rounded-2xl">
-                    <div class="mb-2 text-or font-bold text-white-1 mt-5 flex justify-center">
-                            HỖ TRỢ
-                        </div>
-                        <div class="divide-y divide-black-1">
-                            <div class="flex justify-center font-medium text-futer mb-px ">
-                                <div class="text-white-3">
-                                    Hỗ trợ
-                                </div>
-                                <p class="text-secondry px-2">24/7</p>
-                                <div class="text-white-3">
-                                    tư vẫn khách hàng
-                                </div>
+                <div class="bg-footer rounded-2xl pt-0.75">
+                    <div class="">
+                        <div class="mb-2 text-or font-bold text-white-1 mt-5 flex justify-center">
+                                HỖ TRỢ
                             </div>
-
-                            <div class="mt-6 font-medium text-futer text-white-3">
-                                <div class="flex justify-center items-center h-72">
-                                    <div class="mr-53">
-                                        Hotline:
+                            <div class="divide-y divide-black-1">
+                                <div class="flex justify-center font-medium text-futer mb-px ">
+                                    <div class="text-white-3">
+                                        Hỗ trợ
                                     </div>
-                                    <div class="">+84 987 654 321</div>
+                                    <p class="text-secondry px-2">24/7</p>
+                                    <div class="text-white-3">
+                                        tư vẫn khách hàng
+                                    </div>
+                                </div>
+
+                                <div class="mt-6 font-medium text-futer text-white-3">
+                                    <div class="flex justify-center items-center h-72">
+                                        <div class="mr-53">
+                                            Hotline:
+                                        </div>
+                                        <div class="">+84 987 654 321</div>
+                                    </div>
+                                </div>
+                                <div class="font-medium text-futer text-white-3 pb-1">
+                                    <div class="flex justify-center items-center h-72">
+                                        <div class="mr-83">
+                                            Fax:
+                                        </div>
+                                        <div class="">+84 987 654 321</div>
+                                    </div>  
                                 </div>
                             </div>
-                            <div class="font-medium text-futer text-white-3">
-                                <div class="flex justify-center items-center h-72">
-                                    <div class="mr-83">
-                                        Fax:
-                                    </div>
-                                    <div class="">+84 987 654 321</div>
-                                </div>  
-                            </div>
-                        </div>
-                       
+                        
 
-                        <!-- <div class="border mb-6 border-white-1 mt-6 mb-7"></div>
-                        <div class="flex flex-row justify-center">
-                            <div class="font-medium text-futer mr-16 text-white-3">
-                                Fax:
-                            </div>
-                            <div class="font-medium text-futer ml-2 text-white-3">+84 987 654 321</div>
-                        </div> -->
+                            <!-- <div class="border mb-6 border-white-1 mt-6 mb-7"></div>
+                            <div class="flex flex-row justify-center">
+                                <div class="font-medium text-futer mr-16 text-white-3">
+                                    Fax:
+                                </div>
+                                <div class="font-medium text-futer ml-2 text-white-3">+84 987 654 321</div>
+                            </div> -->
+                    </div>
                 </div>
             </div>
         </div>

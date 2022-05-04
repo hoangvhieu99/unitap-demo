@@ -4,8 +4,8 @@
   <div class="bg-background">
   <div class="container font-body iteams-center">
     <div class="grid grid-cols-2">
-      <div>
-        <img src="">
+      <div class="my-17 flex justify-center">
+        <img src="../images/icons/icon-provide.svg">
       </div>
       <div class="mt-28 ">
         <h2 class="text-tt font-bold text-secondry">
@@ -21,22 +21,22 @@
         <!-- rounded: border-radius: 0.25rem; /* 4px */ -->
         <div>
           <div class="flex items-center mb-8">
-            <img src="../images/icons/button1.svg" alt="">
+            <img src="../images/icons/number1.svg" alt="">
             <p class="text-black ml-8 text-stt">Không thu phí hàng tháng</p>
           </div>
           <div class="flex items-center mb-8">
-            <img src="../images/icons/button2.svg" alt="">
+            <img src="../images/icons/number2.svg" alt="">
 
             <p class="text-black ml-8 text-stt">Thoải mái đổi thông tin không giới hạn</p>
           </div>
 
           <div class="flex items-center mb-8">
-            <img src="../images/icons/button3.svg" alt="">
+            <img src="../images/icons/number3.svg" alt="">
             <p class="text-black ml-8 text-stt">Không giới hạn số lần chạm thẻ</p>
           </div>
 
           <div class="flex mb-28 items-start">
-            <img src="../images/icons/button4.svg" alt="">
+            <img src="../images/icons/number4.svg" alt="">
             <p class="text-black ml-8 text-stt ">An toàn, không yêu cầu quyền truy<br/> cập và mật khẩu</p>
           </div>
         </div>

@@ -14,8 +14,13 @@ module.exports = {
       'body':["'Manrope', sans-serif"]
     },
     extend: {
+      spacing:{
+        '0.75':'3px',
+        '17':'68px',
+      },
       boxShadow:{
         'hexagon':'0 3px 8px 12px rgba(30, 42, 57, 0.08)',
+        'social':'0px 40px 38px rgba(0, 0, 0, 0.04)',
       },
       margin:{
         '53':'53px',
@@ -49,6 +54,7 @@ module.exports = {
           200:'#1E2A39',
           300:'rgba(30, 42, 57, 0.5)',
         },
+        'footer':'rgba(255, 255, 255, 0.04)',
         'espec':'linear-gradient(93.26deg, #F078AB 2.7%, #A478C8 37.67%, #FFAC61 100%)',
         'secondry': '#FFA654',
         'frame':'DBDFE4',
@@ -59,7 +65,8 @@ module.exports = {
         'white':{
           '1':'#FFFFFF',
           '2':'#E0E0E0',
-          '3':'#CCCCCC'
+          '3':'#CCCCCC',
+          '4':'#F4F4F4'
         },
         'black':{
           '0':'#161616',
