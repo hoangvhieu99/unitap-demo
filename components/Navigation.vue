@@ -30,7 +30,7 @@
       <div  :class="showMenu ? 'flex' : 'hidden'"
         class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
           <a href="#" class="p-2 font-bold lg:px-5 text-primary-100 text-mn rounded hover:bg-gray-200 hover:text-primary-200 transition-colors duration-300">
-              Giới thiệu
+              Giới thiệu bản thân
           </a>
           <a href="#" class="p-2 font-bold lg:px-5 text-primary-100 text-mn rounded hover:bg-gray-200 hover:text-primary-200 transition-colors duration-300">
               Hướng dẫn
