@@ -20,6 +20,7 @@
     "*.**": "prettier --check --ignore-unknown"
   },
   "dependencies": {
+    "@vue/composition-api": "^1.6.0",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "v-tooltip": "^2.1.3",
