@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  clone:
     runs-on: self-hosted
 
     defaults:
@@ -15,10 +15,18 @@ jobs:
         working-directory: /root/gitlab.com/unitap
         
     steps:
-      - name: Master deploy
-        run: |
-          git pull origin master
-          yarn install
-          yarn generate
-          yarn build
-          pm2 reload 38
+      - name: Clone
+        run: git pull origin master
+        
+      - name: Install library
+        run: yarn install
+        
+      - name: Generate statics page
+        run: yarn generate
+        
+      - name: Build
+        run: yarn build
+        
+      - name: Reload PM2
+        run: pm2 reload 38
+        
