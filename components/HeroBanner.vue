@@ -15,7 +15,8 @@
       </div>
 
       <div class="mt-12 flex justify-end">
-        <img src="../images/icons/icon-banner.svg" alt="">
+        
+          <img src="../images/icons/icon-banner.svg" class="icon-banner">      
       </div>
     </div>
   </div>
@@ -26,3 +27,10 @@ export default {
   name: 'HeroBanner',
 }
 </script>
+<style scoped>
+.icon-banner{
+  max-width: 180%;
+  width: 180%;
+  height: 497px;
+}
+</style>

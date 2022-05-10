@@ -8,7 +8,7 @@
             <img src="../images/icons/logo-header.svg" alt="">
           </router-link>
           <!-- Mobile menu button -->
-          <div @click="toggleNav" class="flex md:hidden">
+          <div class="flex md:hidden">
             <button
               type="button"
               class="
@@ -27,10 +27,10 @@
           </div>
       </div>
 
-      <div  :class="showMenu ? 'flex' : 'hidden'"
+      <div
         class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
           <a href="#" class="p-2 font-bold lg:px-5 text-primary-100 text-mn rounded hover:bg-gray-200 hover:text-primary-200 transition-colors duration-300">
-              Giới thiệu bản thân
+              Giới thiệu
           </a>
           <a href="#" class="p-2 font-bold lg:px-5 text-primary-100 text-mn rounded hover:bg-gray-200 hover:text-primary-200 transition-colors duration-300">
               Hướng dẫn
@@ -69,14 +69,14 @@
 </template>
 
 <script>
-import { ref } from '@vue/composition-api';
+// import { ref } from '@vue/composition-api';
 export default {
-   setup() {
-    const showMenu = ref(false);
-    const toggleNav = () => (showMenu.value = !showMenu.value);
-    return { showMenu, toggleNav };
-  },
+  //  setup() {
+  //   const showMenu = ref(false);
+  //   const toggleNav = () => (showMenu.value = !showMenu.value);
+  //   return { showMenu, toggleNav };
+  // },
+  name: 'NuxtTutorial',
 };  
-  // name: 'NuxtTutorial',
 
 </script>

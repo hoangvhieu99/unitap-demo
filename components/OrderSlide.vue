@@ -2,8 +2,27 @@
 <template>
   <div class="container font-body iteams-center">
     <div class="grid grid-cols-2">
-      <div>
-        <img src="">
+      <div class="mt-36">
+        <div class="flex justify-center gap-x-4">
+          <img src="../images/icons/previos.svg">
+          <img src="../images/icons/card.svg">
+          <img src="../images/icons/next.svg">
+        </div>
+        <span class="mt-2 mb-1 flex justify-center">
+          <img src="../images/icons/shadow.svg" alt="">
+        </span>
+        <div class="mt-16 mb-4 flex justify-center gap-x-8">
+          <span>
+            <img src="../images/icons/card-front.svg" alt="">
+          </span>
+          <span>
+            <img src="../images/icons/card-front.svg" alt="">
+          </span>
+        </div>
+        <div class="mt-0.5 flex justify-center gap-x-24">
+          <span>Mặt trước</span>
+          <span>Mặt sau</span>
+        </div>
       </div>
       <div class="mt-16 ">
         <h2 class="mb-12 text-tt font-bold text-primary-200">
