@@ -33,9 +33,12 @@
           <div class="mb-6">
             <input type="usename" name="usename" class="mt-1 px-3 py-2 bg-white border shadow-sm border-frame placeholder-slate-400 placeholder:italic focus:outline-none focus:border-secondry focus:ring-secondry block w-full rounded-lg focus:ring-1" placeholder="Thẻ định danh" />
           </div>
-          <div class="rounded-lg bg-secondry w-full py-2 flex text-white justify-center text-d-m font-bold">
+          <div class="cursor-pointer rounded-lg bg-secondry w-full py-2 flex text-white justify-center text-d-m font-bold">
             ĐĂNG KÝ
           </div>
+        </div>
+        <div class="flex mt-60 m-auto">
+          <img src="../images/icons/regis-card.svg" alt="">
         </div>
       </div>
     </div>

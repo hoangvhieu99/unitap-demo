@@ -12,10 +12,10 @@
           <img src="../images/icons/shadow.svg" alt="">
         </span>
         <div class="mt-16 mb-4 flex justify-center gap-x-8">
-          <span>
+          <span class="cursor-pointer">
             <img src="../images/icons/card-front.svg" alt="">
           </span>
-          <span>
+          <span class="cursor-pointer">
             <img src="../images/icons/card-front.svg" alt="">
           </span>
         </div>
